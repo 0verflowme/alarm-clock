@@ -104,7 +104,7 @@ function createNewAlarmDOM() {
     alert("Its a 12 hour format clock, please set appropriate time");
     return;
   }
-
+ // bounds checking for user input
   if (
     Number(userHours.value) < 0 ||
     Number(userHours.value) > 12 ||
