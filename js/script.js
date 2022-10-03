@@ -74,7 +74,7 @@ function displayCurrentTime(){
     for(let i=0; i<alarmsObj.length; i++){
         if((currentHour.innerText + ':' + second) == `${alarmsObj[i].hour}:${alarmsObj[i].minute}:${alarmsObj[i].seconds}`){
             
-            alert("Alarm Ringing");
+            alert("Alarm Ringing, Click on ok to stop");
             alarmsObj.splice(i, 1);
         }
     }
