@@ -63,7 +63,8 @@ function displayCurrentTime() {
       currentHour.innerText + ":" + second ==
       `${alarmsObj[i].hour}:${alarmsObj[i].minute}:${alarmsObj[i].seconds}`
     ) {
-      alert("Alarm Ringing, Click on ok to stop");
+      var alertbox = document.querySelector("#alert-will-be-here");
+      alertbox.classList.add('show');
       alarmsObj.splice(i, 1);
     }
   }
@@ -101,10 +102,10 @@ function createNewAlarmDOM() {
     userHours.value == undefined ||
     userHours.value == "00"
   ) {
-    alert("Its a 12 hour format clock, please set appropriate time");
+	alert("Invalid Time");
     return;
   }
- // bounds checking for user input
+  // bounds checking for user input
   if (
     Number(userHours.value) < 0 ||
     Number(userHours.value) > 12 ||
@@ -113,7 +114,7 @@ function createNewAlarmDOM() {
     Number(userSeconds.value) < 0 ||
     Number(userSeconds.value) > 60
   ) {
-    alert("Invalid Time format");
+	alert("Invalid Time");
     return;
   }
 

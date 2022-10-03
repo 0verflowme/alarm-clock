@@ -36,7 +36,7 @@ input[type=number] {
 /* -------------Root App CSS ------------- */
 main{
     min-height: 750px;
-    width: 420px;
+    width: 500px;
     background-color: var(--dark_bg);
     padding: 0.6%;
     padding-top: 0.8%;
