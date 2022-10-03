@@ -190,9 +190,7 @@ main{
 /* ---------------Alarm Items CSS------------ */
 
 #al-heading{
-    font-size: 19px;
-    margin-bottom: 3%;
-    margin-left: 2%;
+    font-weight: bold;
 }
 
 #alarm-items-wrapper{
